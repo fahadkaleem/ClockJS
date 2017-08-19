@@ -1,11 +1,20 @@
 /**
  * Created by kaleemmf on 8/18/17.
  */
-document.getElementById('clock').innerHTML = "LOL";
 
-function startClock(){
+
+function startClock() {
     var today = new Date();
-    var hour = today.getHours();
-    var minute = today.getMinutes();
-    var seconds = today.getHours();
+    var hours = today.getHours();
+    var minutes = addZero(today.getMinutes());
+    var seconds = addZero(today.getSeconds());
+    document.getElementById('clock').innerHTML = hours + ":" + minutes + ":" + seconds;
 }
+
+function addZero(x) {
+    if (x < 10) {
+        x = "0" + x;
+    }
+    return x;
+}
+setInterval(startClock, 500);
