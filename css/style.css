@@ -1,5 +1,5 @@
 body{
-    background: #64B5F6;
+    background: #FF8A65;
 }
 
 .container{
@@ -8,7 +8,6 @@ body{
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 300px;
-    font-size: 4vw;
+    font-size: 100px;
 
 }
